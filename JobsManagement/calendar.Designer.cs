@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.workToday = new System.Windows.Forms.Button();
+            this.btnTK = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.paMatrix = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -41,15 +43,13 @@
             this.btnWed = new System.Windows.Forms.Button();
             this.btnTues = new System.Windows.Forms.Button();
             this.btnMon = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnTK = new System.Windows.Forms.Button();
             this.btnLich = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.nmrNotify = new System.Windows.Forms.NumericUpDown();
             this.chkNotify = new System.Windows.Forms.CheckBox();
             this.btnToday = new System.Windows.Forms.Button();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.workToday = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -70,13 +70,32 @@
             this.panel2.Size = new System.Drawing.Size(1058, 629);
             this.panel2.TabIndex = 1;
             // 
+            // workToday
+            // 
+            this.workToday.Location = new System.Drawing.Point(421, 3);
+            this.workToday.Name = "workToday";
+            this.workToday.Size = new System.Drawing.Size(270, 37);
+            this.workToday.TabIndex = 2;
+            this.workToday.Text = "Việc làm hôm nay";
+            this.workToday.UseVisualStyleBackColor = true;
+            this.workToday.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnTK
+            // 
+            this.btnTK.Location = new System.Drawing.Point(901, 3);
+            this.btnTK.Name = "btnTK";
+            this.btnTK.Size = new System.Drawing.Size(147, 34);
+            this.btnTK.TabIndex = 1;
+            this.btnTK.Text = "Thống Kê";
+            this.btnTK.Click += new System.EventHandler(this.btnTK_Click);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.paMatrix);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(3, 37);
+            this.panel3.Location = new System.Drawing.Point(12, 76);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1052, 589);
+            this.panel3.Size = new System.Drawing.Size(1036, 550);
             this.panel3.TabIndex = 1;
             // 
             // paMatrix
@@ -99,7 +118,7 @@
             this.panel4.Controls.Add(this.btnMon);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1049, 54);
+            this.panel4.Size = new System.Drawing.Size(1030, 62);
             this.panel4.TabIndex = 0;
             // 
             // btnNext
@@ -184,25 +203,6 @@
             this.btnMon.Text = "Thứ 2";
             this.btnMon.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.btnToday);
-            this.panel1.Controls.Add(this.dateTimePicker);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1052, 28);
-            this.panel1.TabIndex = 0;
-            // 
-            // btnTK
-            // 
-            this.btnTK.Location = new System.Drawing.Point(901, 3);
-            this.btnTK.Name = "btnTK";
-            this.btnTK.Size = new System.Drawing.Size(147, 34);
-            this.btnTK.TabIndex = 1;
-            this.btnTK.Text = "Thống Kê";
-            this.btnTK.Click += new System.EventHandler(this.btnTK_Click);
-            // 
             // btnLich
             // 
             this.btnLich.Location = new System.Drawing.Point(12, 3);
@@ -210,6 +210,16 @@
             this.btnLich.Size = new System.Drawing.Size(132, 34);
             this.btnLich.TabIndex = 0;
             this.btnLich.Text = "Lịch";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.btnToday);
+            this.panel1.Controls.Add(this.dateTimePicker);
+            this.panel1.Location = new System.Drawing.Point(12, 40);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1036, 33);
+            this.panel1.TabIndex = 0;
             // 
             // panel6
             // 
@@ -269,17 +279,7 @@
             this.dateTimePicker.Size = new System.Drawing.Size(238, 22);
             this.dateTimePicker.TabIndex = 0;
             // 
-            // workToday
-            // 
-            this.workToday.Location = new System.Drawing.Point(421, 3);
-            this.workToday.Name = "workToday";
-            this.workToday.Size = new System.Drawing.Size(270, 37);
-            this.workToday.TabIndex = 2;
-            this.workToday.Text = "Việc làm hôm nay";
-            this.workToday.UseVisualStyleBackColor = true;
-            this.workToday.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // fcalendar
+            // fCalendar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
