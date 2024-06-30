@@ -7,7 +7,11 @@ TTCSN_Group8
 - Đặng Đức Trung
 
 Sản phẩm: ___Phần mềm quản lý công việc JobsManagement___
-
+## Giao diện & chức năng chính
+* Giao diện màn hình chính
+* Giao diện xem lịch
+* Giao diện thống kê
+* Giao diện cài đặt
 ## Cài đặt phần mềm
 - Bước 1: Tải và cài đặt 
     - SQL Server bản [__Express__](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
