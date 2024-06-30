@@ -5,8 +5,13 @@ TTCSN_Group8
 - Vũ Duy Khánh
 - Vũ Đình Trí
 - Đặng Đức Trung
-
-Sản phẩm: ___Phần mềm quản lý công việc JobsManagement___
+## Giới thiệu
+- Sản phẩm: ___Phần mềm quản lý công việc JobsManagement___
+- Cấu trúc: 
+    - Phần mềm sử dụng mô hình DAO, DTO 
+    - Ngôn ngữ C# Winform
+    - Database SQL Server
+    
 ## Giao diện & chức năng chính
 * Giao diện màn hình chính
   ![Giao diện màn hình chính](./Setup/images/home.png)
